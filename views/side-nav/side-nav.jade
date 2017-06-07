@@ -5,16 +5,16 @@
         span.icon-bar
         span.icon-bar
       .list-group
-        span.list-group-item.active(href='/dashboard')
+        a.list-group-item(href='/dashboard')
           | Dashboard
           span#slide-submenu.pull-right
             i.fa.fa-times
+        a.list-group-item(href='/dashboard/user')
+          i.fa.fa-search
+          |  Users
         a.list-group-item(href='/dashboard/add-user')
           i.fa.fa-comment-o
           |  Add User
-        a.list-group-item(href='#')
-          i.fa.fa-search
-          |  Lorem ipsum
         a.list-group-item(href='#')
           i.fa.fa-user
           |  Lorem ipsum

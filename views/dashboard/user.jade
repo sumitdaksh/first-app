@@ -3,8 +3,9 @@ extends ../layout
 block content
   include ../header/header
   div.row
-   div.col-sm-12
-    div.clearfix
+    div.col-md-3
+      include ../side-nav/side-nav
+    
     //- div
     //- table
     //-   thead
@@ -14,30 +15,30 @@ block content
     //-       tr
     //-         td 
     //-           a(href='/admin/post/' + post.id) #{post.author} - #{post.title}
-      div.clearfix
-  table.table
-   thead
-     tr
-       th ID
-       th Author
-       th Title
-       th Email
-       th Edit
-       th Delete
-    tbody
-    - var x = 0
-      each post, i in userPosts
-        - x += 1
-        tr(class=(x % 2 == 0)? 'success' : 'info')
-           td #{x}
-           td #{post.author}
-           td #{post.title}
-           td #{post.email}
-           td
-             input.btn.btn-success.btn-xs(type='submit',  value='Edit')
-           td 
-             input.btn.btn-danger.btn-xs(type='submit',  value='Delete')
-             
+    div.col-md-9
+      table.table
+       thead
+         tr
+           th ID
+           th Author
+           th Title
+           th Email
+           th Edit
+           th Delete
+        tbody
+        - var x = 0
+          each post, i in userPosts
+            - x += 1
+            tr(class=(x % 2 == 0)? 'success' : 'info')
+               td #{x}
+               td #{post.author}
+               td #{post.title}
+               td #{post.email}
+               td
+                 input.btn.btn-success.btn-xs(type='submit',  value='Edit')
+               td 
+                 input.btn.btn-danger.btn-xs(type='submit',  value='Delete')
+           
     //-    td Info
     //-    td Dooley
     //-    td july@example.com
