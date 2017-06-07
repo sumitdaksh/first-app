@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/add-user', function(req, res, next) {
   console.log('dashboard/add-user');
-  res.render('dashboard/add-user',{ title:'Add User Page'});
+  res.render('dashboard/add-user',{ title:'Add User'});
 });
 
 router.post('/add-user', function(req, res, next) {
@@ -36,7 +36,7 @@ router.get('/user', function(req, res, next) {
     //  console.log('getData.UserModel');
      var data = getData.UserModel
     //  console.log(data);
-   res.render('dashboard/user',{ title:'User Page', userPosts: data});
+   res.render('dashboard/user',{ title:'User', userPosts: data});
 });
 
 module.exports = router;

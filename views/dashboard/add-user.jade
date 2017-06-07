@@ -7,17 +7,16 @@ block content
     div.col-md-3
       include ../side-nav/side-nav
     div.col-md-9
-      h1 Welcome #{title}
+      h1 #{title}
       div.clearfix
       .row
         .col-md-8
-          h1.display-4.m-b-2 Employee form
           // register form
           form(method='POST' action='./add-user')
             div.form-group
               label(for='first name') First Name:
               input#name.form-control(type='text', placeholder='first name' name='first_name')
-              div.form-group
+            div.form-group
                 label(for='last name') Last Name:
                 input#name.form-control(type='text', placeholder='last name' name='last_name')
             div.form-group
@@ -36,9 +35,7 @@ block content
                   | Female
             div.form-group
               label(for='pw2') Address:
-              textarea#comment.form-control(rows='5', name='Address')
+              textarea#comment.form-control(rows='3', name='Address')
             button.btn.btn-primary(type='submit') Save
             div.clearfix
   include ../footer/footer
-  
-  
