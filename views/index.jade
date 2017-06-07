@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .main.container
+    include header/login-header
+    div.clearfix
+      .row
+        .col-md-6.col-md-offset-3
+          h1.display-4.m-b-2 #{title}
+          form(method='POST' action='/login')
+            div.form-group
+              label(for='email') Email
+              input.form-control(type='text' id='email' placeholder='email' name='email')
+            div.form-group
+              label(for='password') Password
+              input.form-control(type='password' id='password' placeholder='password' name='password')
+            //- div.clearfix
+            div.col-md-6
+            button.btn.btn-primary(type='submit') Log in 
+            div.col-md-6 Click here #[a(href='/signup') Sign Up] 
+       include footer/login-footer

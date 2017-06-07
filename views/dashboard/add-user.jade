@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+  include ../header/header
+  div.clearfix
+  div.row
+  div.col-sm-12
+    h1 Welcome #{title}
+    div.clearfix
+    .row
+      .col-md-10
+        h1.display-4.m-b-2 Employee form
+        // register form
+        form(method='POST' action='./add-user')
+          div.form-group
+            label(for='first name') First Name:
+            input#name.form-control(type='text', placeholder='first name' name='first_name')
+            div.form-group
+              label(for='last name') Last Name:
+              input#name.form-control(type='text', placeholder='last name' name='last_name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='Contact') Contact :
+            input#favoriteBook.form-control(type='text', placeholder='Contact' name='Contact', maxlength='10')
+          div.form-group
+            label(for='radio') Gender:
+              label.radio-inline
+                input(type='radio', name='gender_type', value='Male')
+                | Male
+              label.radio-inline
+                input(type='radio', name='gender_type', Value='Female')
+                | Female
+          div.form-group
+            label(for='pw2') Address:
+            textarea#comment.form-control(rows='5', name='Address')
+          button.btn.btn-primary(type='submit') Save
+          div.clearfix
+  include ../footer/footer
+  
+  
