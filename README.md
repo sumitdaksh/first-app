@@ -1,2 +1,2 @@
 # first-app
-node + jade
+Nodejs + Jade + Expressjs
