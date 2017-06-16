@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+  include ../header/header
+  div.clearfix
+  div.row
+    div.col-md-3
+     include ../side-nav/side-nav
+    div.col-sm-9
+      table.table
+       thead
+         tr
+           th ID
+           th Name
+           th contact
+           th Email
+           th Gender
+           th Address
+           th Edit
+           th Delete
+        tbody
+        - var x = 0;
+        - var email = '';
+          each post, i in userPosts
+            - x += 1
+            tr(class=(x % 2 == 0)? 'success' : 'info')
+               td #{x}
+               td #{post.first_name + ' '+ post.last_name}
+               td #{post.contact}
+               td #{post.email} 
+               td #{post.gender_type}
+               td #{post.Address}
+               td
+                //- a.btn.btn-success.btn-xs(href='/dashboard/edit/'+ post.email) Edit
+                a.btn.btn-success.btn-xs(type='button', id='modalPopupclick', onclick='OpenEditModalPopUp(#{JSON.stringify(post)},"/dashboard/update-user")') Edit
+               td 
+                 button.btn.btn-danger.btn-xs(type='button', id='modalPopupclick', onclick='OpenModalPopUp("#{post.email}","/dashboard/delete/")') Delete
+  include ../footer/footer
+  include ../shared/popup

@@ -1,0 +1,106 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #00B7FF;
+}
+
+a {
+  color: #00B7FF;
+}
+p {
+  color: #0F435F;
+}
+.class-name {
+  width:100%;
+  height: 40px;
+  border-color: #264712;
+}
+#keyId {
+  background-color: #765787;
+}
+
+#keyId:focus {
+    color: #fff;
+}
+.loginheaderColor {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #183f7c;
+}
+.textofHeader {
+  font-family: verdana;
+  margin-top: 10px;
+}
+.textoffooter {
+  font-family: verdana;
+  margin-top: 10px;
+}
+/* Side nav Css  Start*/
+.mini-submenu{
+  display:none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;
+  /*position: relative;*/
+  width: 42px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu {
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Side nav Css  End*/
+nav.navbar-inverse {
+    background-color: #183f7c;
+    border-color: #183f7c;
+    height: 80px;
+}
+
+.navbar-inverse .navbar-brand {
+  margin-top: 10px;
+}
+nav navbar-nav navbar-right{
+  margin-top: 15px;
+}
+.navbar-inverse .navbar-toggle{
+  margin-top: 10px;
+}
+title {
+   color: #236598;
+}
+
+.padding-Bootm-Add-User {
+  padding-bottom: 10px;
+}
+input .form-control {
+  border-color: #123ADE;
+}
+.modal-body hr {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top: 1px solid #e5e5e5;
+}
+/*404 error page css */

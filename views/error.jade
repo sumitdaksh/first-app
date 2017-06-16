@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    //- link(rel="icon", href="favicon.ico", type="image/ico", sizes="16x16")
+    link(rel='stylesheet', href='/stylesheets/error.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')          
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+ 
+ body
+    div(marginwidth='0', marginheight='0')
+      #block_error
+        div
+          h2 Error 404. &nbspOops you've have encountered an error
+          p
+            | It apperrs that Either something went wrong or the page doesn't exist anymore..
+            br
+            |         This website is temporarily unable to service your request as it has exceeded it’s resource limit. Please check back shortly.
+          p
+            | If you are the owner of the account and are regularly seeing this error, please read more about it in our 
+            a(href='/') Take home
+            | .
+            |         If you have any questions, please contact our Technical Support department.

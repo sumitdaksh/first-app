@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  include ../header/header
+  div.clearfix
+  div.col-md-3
+   include ../side-nav/side-nav
+  div.col-sm-9
+  .row
+    .col-md-7
+      .panel.panel-primary
+        .panel-heading User Persnal informations  :
+        .panel-body
+          div(align='right')
+            a(href='#')
+              span.glyphicon.glyphicon-tasks
+              |  &nbsp Update 
+          label Name
+          input.form-control(type='text', value="#{data.name}", disabled='')
+          //- label Last name : 
+          //- input.form-control(type='text', value='just', disabled='')
+          //- label Gender : 
+          //- input.form-control(type='text', value='just', disabled='')
+          //- label Street : 
+          //- input.form-control(type='text', value='just', disabled='')
+          label Email :
+          input.form-control(type='text', value="#{data.email}", disabled='')
+          label Number telephone :
+          input.form-control(type='text', value="#{data.contact}", disabled='')
+      .col-md-2   
+  include ../footer/footer
